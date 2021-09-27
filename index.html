@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/189/189666.png" type="image/x-icon">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">To-Do List <i class="fas fa-list-ul"> </i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" href="#">Markdown</a>
+              <a class="nav-link" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="addtask">
+          <h4>Add Task Here:</h4>
+          <div class="input-group mb-3 lg-3">
+            <input type="text" class="form-control" placeholder="Enter Task..." aria-label="Task Name" aria-describedby="button-addon2">
+            <button class="btn btn-outline-primary task-input" type="button" id="button-addon2">Add Task</button>
+            
+          </div>
+          <button type="button" class="btn btn-danger clear">Clear Task List</button>
+      </section>
+      <section id="tasklist">
+        
+          <h4> Task-List:</h4>
+          <div class="container">
+              <div class="item bg-info text-dark item1"><span class="task-index">-></span> Do CSS</div>
+            <div class="mark-done btn-outline-success item1">Done</div>
+              <div class="item bg-info text-dark item2"><span class="task-index">-></span> Do Javacript</div>
+            <div class="mark-done btn-outline-success item2">Done</div>
+
+          </div>
+      </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
