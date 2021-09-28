@@ -3,10 +3,10 @@ console.log("Never Gonna Give You Up.");
 
 var taskCount=2;
 
-document.querySelectorAll(".item1")[1].addEventListener("click",()=>{
+document.querySelectorAll(".item1")[1].addEventListener("click",function(){
     $(".item1").fadeOut();
 })
-document.querySelectorAll(".item2")[1].addEventListener("click",()=>{
+document.querySelectorAll(".item2")[1].addEventListener("click",function(){
     $(".item2").fadeOut();
 })
 // $(".mark-done.item1").click(()=>{$(".item1").fadeOut();})
